@@ -1,4 +1,7 @@
 package s3632205;
+
+import java.util.Random;
+
 //Aditya Vijayakumar
 public class Game
 {
@@ -13,6 +16,24 @@ public class Game
 	public Game chooseAthletes(Game game,String choose){
 
 		this.participants=AthleteDetails.chooseAthletes(choose);
+		return game;
+	}
+	public Game createGameId(Game game,String option)
+	{
+		Random r=new Random();
+		int randomId=r.nextInt((99-10)+1)+10;
+		if(option.equals("1"))
+		{
+			game.gameId="S"+randomId;
+		}
+		else if(option.equals("2"))
+		{
+			game.gameId="R"+randomId;
+		}
+		else if(option.equals("3"))
+		{
+			game.gameId="C"+randomId;
+		}
 		return game;
 	}
 
