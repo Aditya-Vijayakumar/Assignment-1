@@ -1,7 +1,7 @@
 package s3632205;
 import java.util.Random;
 
-//Aditya Vijayakumar
+// Written by Aditya Vijayakumar(s3632205)
 public class AthleteDetails extends Athlete {
 
 	public AthleteDetails(String athleteId, String name, int age, String state) {
