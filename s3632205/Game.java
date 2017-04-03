@@ -8,7 +8,6 @@ public class Game
 
 	public String gameId;
 	public Official referee;
-	public int score;
 	public Athlete[] participants=new Athlete[8];
 	public String userPrediction=null;
 	public Athlete[] winners=null;
