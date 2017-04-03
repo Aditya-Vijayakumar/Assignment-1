@@ -1,8 +1,10 @@
+//Written by Aditya Vijayakumar
+//Student ID: s3632205
+
 package s3632205;
 
 import java.util.Random;
 
-// Written by Aditya Vijayakumar(s3632205)
 public class Game
 {
 
