@@ -2,7 +2,7 @@ package s3632205;
 
 import java.util.Random;
 
-//Aditya Vijayakumar
+// Written by Aditya Vijayakumar(s3632205)
 public class Game
 {
 
