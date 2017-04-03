@@ -1,7 +1,7 @@
 package s3632205;
 import java.util.*;
 
-// Aditya Vijayakumar
+// Written by Aditya Vijayakumar(s3632205)
 public class Athlete
 {
 	public String athleteId;
