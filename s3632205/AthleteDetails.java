@@ -1,10 +1,8 @@
-//Written by Aditya Vijayakumar
-//Student ID: s3632205
+ class AthleteDetails extends Athlete {
+	
+	//Written by Aditya Vijayakumar
+	//Student ID: s3632205
 
-package s3632205;
-import java.util.Random;
-
-public class AthleteDetails extends Athlete {
 
 	public AthleteDetails(String athleteId, String name, int age, String state) {
 		super(athleteId, name, age, state);
@@ -16,7 +14,7 @@ public class AthleteDetails extends Athlete {
 	}
 
 	public static Athlete[] listofAthletes=null;
-
+	
 	public static void storeAthletes()
 	{
 		listofAthletes=new Athlete[32];
@@ -28,7 +26,7 @@ public class AthleteDetails extends Athlete {
 		listofAthletes[5]=new Athlete("SW172","Michael",30,"Nsw");
 		listofAthletes[6]=new Athlete("SW132","Jazz",32,"Qld");
 		listofAthletes[7]=new Athlete("SW112","Caroline",26,"Vic");
-
+		
 		listofAthletes[8]=new Athlete("RU111","Michelle",20,"Wa");
 		listofAthletes[9]=new Athlete("RU110","Jimmy",24,"Vic");
 		listofAthletes[10]=new Athlete("RU190","Zac",26,"Qld");
@@ -37,9 +35,9 @@ public class AthleteDetails extends Athlete {
 		listofAthletes[13]=new Athlete("RU160","Rose",26,"Vic");
 		listofAthletes[14]=new Athlete("RU150","Carmen",29,"Wa");
 		listofAthletes[15]=new Athlete("RU140","Andrea",30,"Sa");
-
-
-
+		
+		
+		
 		listofAthletes[16]=new Athlete("CY131","Julia",22,"Sa");
 		listofAthletes[17]=new Athlete("CY132","Jerry",23,"Wa");
 		listofAthletes[18]=new Athlete("CY133","Steve",24,"Qld");
@@ -48,7 +46,7 @@ public class AthleteDetails extends Athlete {
 		listofAthletes[21]=new Athlete("CY136","Jacob",29,"Vic");
 		listofAthletes[22]=new Athlete("CY137","Andrew",21,"Nsw");
 		listofAthletes[23]=new Athlete("CY138","Huan",21,"Vic");
-
+		
 		listofAthletes[24]=new Athlete("SA148","Barbera",19,"Vic");
 		listofAthletes[25]=new Athlete("SA149","Joseph",20,"Nsw");
 		listofAthletes[26]=new Athlete("SA200","Hanna",24,"Wa");
@@ -57,17 +55,17 @@ public class AthleteDetails extends Athlete {
 		listofAthletes[29]=new Athlete("SA230","Stephie",22,"Sa");
 		listofAthletes[30]=new Athlete("SA240","Serena",21,"Sa");
 		listofAthletes[31]=new Athlete("SA250","Federer",20,"Tsm");
-
+		
 	}
-
+	
 	public static Athlete[] chooseAthletes(String choose)
 	{
 		Athlete[] chosenAthletes=new Athlete[16];
-
+		
 		int index=0;
 		if(listofAthletes==null){
 		storeAthletes();
-
+		
 		}
 		if(choose.startsWith("SW"))
 		{	for(int i=0;i<listofAthletes.length;i++)
@@ -128,8 +126,5 @@ public class AthleteDetails extends Athlete {
 		}
 	return finalAthletes1;
 	}
-
+	
 }
-
-
-
