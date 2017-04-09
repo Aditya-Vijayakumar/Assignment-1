@@ -1,18 +1,15 @@
 
-//Written by Aditya Vijayakumar
-//Student ID: s3632205
-
-package s3632205;
-
-import java.util.Random;
-
-public class Official
+ class Official
 {
+	//Written by Aditya Vijayakumar
+	//Student ID: s3632205
+
+
 	public int officialId=0;
 	public String name=null;
 	public int age=0;
 	public String state=null;
-
+	
 	public Official(int officialId,String name, int age, String state)
 	{
 		this.officialId=officialId;
@@ -27,7 +24,7 @@ public static Official chooseReferee(){
 	referee[0]=new Official(120,"Johns",35,"Vic");
 	referee[1]=new Official(220,"Stephane",29,"Wa");
 	referee[2]=new Official(230,"Barbara",35,"Sa");
-
+	
 	Random r= new Random();
     int index= r.nextInt((2-0)+1)+0;
     return referee[index];
